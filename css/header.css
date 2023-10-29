@@ -1,0 +1,35 @@
+.site-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.site-header img{
+    margin-left: 100px;
+    width: 250px;
+    height: auto;
+}
+.header-menu{
+    margin-right: 100px;
+	display: flex;
+	gap: 20px;
+	list-style: none;
+	margin-block: 0;
+}
+.header-menu li{
+	padding-block: 20px;
+}
+.header-menu li a{
+    font-size: 24px;
+    text-decoration: none;
+    color: #446084;
+}
+.header-menu li a:hover{
+    border-bottom: 1px solid #446084;
+}
+.site-header button{
+    display: none;
+}
+h1{
+    margin-left: 50px;
+    font-size: 36px;
+}

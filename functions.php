@@ -46,13 +46,6 @@ function refontepingpassion_setup() {
 		*/
 	add_theme_support( 'post-thumbnails' );
 
-	// This theme uses wp_nav_menu() in one location.
-	register_nav_menus(
-		array(
-			'menu-1' => esc_html__( 'Primary', 'refontepingpassion' ),
-		)
-	);
-
 	/*
 		* Switch default core markup for search form, comment form, and comments
 		* to output valid HTML5.
@@ -176,3 +169,9 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+register_nav_menus(
+	array(
+		'header-menu' => 'Menu du header',
+		'footer-menu' => 'Menu du footer'
+	)
+);

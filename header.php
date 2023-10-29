@@ -31,11 +31,11 @@
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
 				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				<?php
 			else :
+				$logo = get_field("logo", "option");
 				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				<img src="<?= $logo["url"]; ?>" alt="<?= $logo["alt"]; ?>">
 				<?php
 			endif;
 			$refontepingpassion_description = get_bloginfo( 'description', 'display' );
@@ -50,8 +50,10 @@
 			<?php
 			wp_nav_menu(
 				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
+					'theme_location' => 'header-menu',
+					'menu_id'        => 'header-menu',
+					'menu_class'     => 'header-menu',
+					'menu-container' => 'nav',
 				)
 			);
 			?>

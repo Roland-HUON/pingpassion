@@ -1,0 +1,21 @@
+.entry-header .entry-title a{
+    text-align: center;
+}
+.site-main .page-header .page-title{
+    min-height: 250px;
+    background-color: #446084;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.post-type-archive-revetement .page-header{
+    min-height: 250px;
+    background-color: #446084;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
