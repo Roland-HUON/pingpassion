@@ -14,6 +14,11 @@
     font-size: 42px;
     line-height: 1;
     margin-bottom: 0.2em;
+    margin-left: 0;
+}
+.post-type-archive-bois .page-header h2{
+    font-size: 24px;
+    text-align: center;
 }
 .post-type-archive-bois .page-header p{
     font-size: 18px;
@@ -27,7 +32,7 @@
     padding-inline: 20px;
 }
 .bois-selection{
-    grid-column: 1/5;
+    margin-left: 20px;
     font-size: 36px;
 }
 .bois-selection:hover{
@@ -77,5 +82,28 @@
     background-color: #7a4618;
 }
 @media screen and (max-width:800px){
-    
+    .bois-wrapper{
+        overflow: auto;
+        transform: scaleX(1);
+    }
+    .bois-card{
+        transform: scaleX(1);
+        height: 220px;
+    }
+    .bois-card img {
+        width: 86px;
+        height: 80px;
+    }
+    .bois-card-content{
+        height: 180px;
+    }
+    .bois-card-content a {
+        display: flex;
+        height: 25px;
+        width: 76%;
+        font-size: 10px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+    }
 }

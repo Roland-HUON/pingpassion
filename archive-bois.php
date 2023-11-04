@@ -18,8 +18,8 @@ get_header();
 				<h1>Bois</h1>
 				<h2>Jouer comme un pro avec les plus grandes qualités de bois du marché !</h2>
 			</header><!-- .page-header -->
+			<h2 class="bois-selection">Notre selection</h2>
 			<section class="bois-wrapper">
-				<h2 class="bois-selection">Notre selection</h2>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
