@@ -27,6 +27,9 @@
     height: 50px;
     border-bottom: 2px solid black;
 }
+.single-revetement-wrapper .single-revetement-card  img{
+    display: none;
+}
 .single-revetement-wrapper .single-revetement-card .single-revetement-content:hover{
     border-bottom: 2px solid gold;
     cursor: pointer;
@@ -48,6 +51,7 @@
     margin-left: 30px;
 }
 .single-revetement-wrapper .single-revetement-card .single-revetement-information .single-revetement-caracteristic{
+    width: max-content;
     height: 130px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -86,4 +90,56 @@
 .single-revetement-wrapper .single-revetement-card .single-revetement-context p{
     margin-left: 10px;
     font-size: 20px;
+}
+@media screen and (max-width:800px) {
+    .single-revetement-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .single-revetement-wrapper img{
+        display: none;
+    }
+    .single-revetement-wrapper .single-revetement-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .single-revetement-wrapper .single-revetement-card .single-revetement-content{
+        margin-left: 0;
+        height: 100px;
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .single-revetement-wrapper .single-revetement-card img{
+        display: block;
+        width: 250px;
+        height: auto;
+    }
+    .single-revetement-wrapper .single-revetement-card .single-revetement-information .single-revetement-caracteristic {
+        margin-left: 30px;
+        padding-inline: 0;
+        gap: 20px;
+    }
+    .single-revetement-wrapper .single-revetement-card .single-revetement-information .single-revetement-caracteristic p{
+        font-size: 15px;
+        font-weight: normal;
+    }
+    .single-revetement-wrapper .single-revetement-card .single-revetement-information .single-revetement-epaisseur{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .single-revetement-wrapper .single-revetement-card .single-revetement-information{
+        margin-left: 10px;
+        height: 230px;
+
+    }
+    .single-revetement-wrapper .single-revetement-card .single-revetement-context {
+        margin-left: 10px;
+    }
+    .single-revetement-wrapper .single-revetement-card .single-revetement-context p {
+        margin-left: 5px;
+        font-size: 12px;
+    }
 }

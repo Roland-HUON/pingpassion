@@ -33,3 +33,6 @@ h1{
     margin-left: 50px;
     font-size: 36px;
 }
+@media screen and (max-width:800px) {
+    
+}

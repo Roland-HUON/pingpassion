@@ -29,7 +29,7 @@ get_header();
 					<div class="revetement-card-content">
 						<?php the_post_thumbnail();?>
 						<div class="revetement-card-content-precision">
-							<?php echo wp_trim_words( get_the_content(), 30, '...' );?>
+							<p><?php echo wp_trim_words( get_the_content(), 30, '...' );?></p>
 							<a href="<?php the_permalink();?>">Se renseigner sur le revêtement</a>
 						</div>
 					</div>

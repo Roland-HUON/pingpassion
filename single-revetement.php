@@ -21,6 +21,7 @@ get_header();
 					<div class="single-revetement-content">
 					<h2 class="single-revetement-title"><?php the_title();?></h2>
 					</div>
+					<?php the_post_thumbnail();?>
 					<section class="single-revetement-information">
 						<h2 class="single-revetement-precision">Informations revêtements</h2>
 						<div class="single-revetement-caracteristic">
@@ -35,7 +36,7 @@ get_header();
 									<?php endforeach; ?>
 								</ul>
 							</div>
-							</div>
+						</div>
 					</section>
 					<div class="single-revetement-context">
 						<h2 class="single-revetement-precision">Description</h2>
