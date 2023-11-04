@@ -18,21 +18,27 @@ get_header();
 			<section class="single-revetement-wrapper">
 				<?php the_post_thumbnail();?>
 				<div class="single-revetement-card">
+					<div class="single-revetement-content">
 					<h2 class="single-revetement-title"><?php the_title();?></h2>
+					</div>
 					<section class="single-revetement-information">
 						<h2 class="single-revetement-precision">Informations revêtements</h2>
-						<p>Rapidité : <?= $datarevetement['rapidite']?> </p>
-						<p>Contrôle : <?= $datarevetement['controle']?> </p>
-						<p>Adhérence : <?= $datarevetement['adherence']?> </p>
-
-						<h2 class="single-revetement-precision">Épaisseur</h2>
-						<ul>
-							<?php foreach($datarevetement['epaisseur'] as $epaisseur) : ?>
-								<li><?= $epaisseur['taille']?></li>
-							<?php endforeach; ?>
-						</ul>
+						<div class="single-revetement-caracteristic">
+							<p>Rapidité : <?= $datarevetement['rapidite']?> </p>
+							<p>Contrôle : <?= $datarevetement['controle']?> </p>
+							<p>Adhérence : <?= $datarevetement['adherence']?> </p>
+							<div class="single-revetement-epaisseur">
+								<p>Épaisseur :</p>
+								<ul>
+									<?php foreach($datarevetement['epaisseur'] as $epaisseur) : ?>
+										<li><?= $epaisseur['taille']?></li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+							</div>
 					</section>
 					<div class="single-revetement-context">
+						<h2 class="single-revetement-precision">Description</h2>
 						<?php the_excerpt();?>
 					</div>
 				</div>
