@@ -1,15 +1,6 @@
 .entry-header .entry-title a{
     text-align: center;
 }
-.site-main .page-header .page-title{
-    min-height: 250px;
-    background-color: #446084;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .post-type-archive-revetement .page-header{
     min-height: 250px;
     background-color: #446084;
@@ -18,4 +9,72 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.post-type-archive-revetement .page-header h1{
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 0.2em;
+}
+.post-type-archive-revetement .page-header p{
+    font-size: 18px;
+}
+.revetement-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1280px;
+    margin: 80px auto;
+    padding-inline: 20px;
+}
+.revetement-card{
+    border: 1px solid grey;
+    background-color: #446084;
+    color: white;
+}
+.revetement-card h2{
+    font-size: 32px;
+    text-align: center;
+}
+.revetement-card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.revetement-card-content{
+    height: 370px;
+    padding: 20px;
+}
+.revetement-card-content a {
+    margin-bottom: 10px;
+    display: block;
+    width: 97%;
+    border: 2px solid #446084;
+    background-color: white;
+    color: #446084;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 8px;
+}
+.revetement-card-content-precision{
+    margin-top: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.revetement-card-content a:visited{
+    color: #446084;
+    background-color: white; 
+}
+.revetement-card-content a:visited:hover{
+    color: gold;
+    background-color: 2px solid gold; 
+}
+.revetement-card-content a:hover{
+    color: gold;
+    border: 2px solid gold;
+}
+@media screen and (max-width:800px){
+    
 }

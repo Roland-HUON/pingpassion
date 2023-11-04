@@ -1,0 +1,23 @@
+.site-footer{
+    height: 500px;
+    color: white;
+    background-color: #446084;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.site-footer a{
+    text-decoration: none;
+    color: white;
+}
+.site-footer h2{
+    margin-left: 20px;
+}
+.site-footer div{
+    margin-left: 20px;
+}
+.site-footer .footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

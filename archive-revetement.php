@@ -18,21 +18,27 @@ get_header();
 				<h1>Revêtements</h1>
 				<h2>Jouer comme un pro avec les meilleurs revêtements du marché du ping pong !</h2>
 			</header><!-- .page-header -->
-
+			<section class="revetement-wrapper">
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
+				?>
+				<article class="revetement-card">
+					<h2><?php the_title();?></h2>
+					<div class="revetement-card-content">
+						<?php the_post_thumbnail();?>
+						<div class="revetement-card-content-precision">
+							<?php echo wp_trim_words( get_the_content(), 30, '...' );?>
+							<a href="<?php the_permalink();?>">Se renseigner sur le revêtement</a>
+						</div>
+					</div>
+				</article>
+		
+				<?php
+			endwhile;?>
+			</section>
+			<?php
 			the_posts_navigation();
 
 		else :

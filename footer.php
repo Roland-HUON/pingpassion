@@ -12,6 +12,25 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+		<div class="footer-info">
+			<h2><?php bloginfo( 'name' ); ?></h2>
+			<div class="site-mapping">
+				<p>Aux portes de Paris, des spécialistes à votre écoute afin de vous conseiller pour tout achat lié au tennis de table.</p>
+			</div>
+			<div class="site-adresse">
+				<p>7 quai d’Austerlitz</p>
+				<p>75013 PARIS</p>
+			</div>
+			<div class="site-contact">
+				<p>Téléphone : <a href="tel:+33145824395">01 45 82 43 95</a></p>
+				<p>Mail : <a href="mailto : contactparis@ping-passion.com">contactparis@ping-passion.com</a></p>
+			</div>
+			<div class="site-img-social-media">
+				<img src="" alt="">
+				<img src="" alt="">
+				<img src="" alt="">
+			</div>
+		</div>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'refontepingpassion' ) ); ?>">
 				<?php

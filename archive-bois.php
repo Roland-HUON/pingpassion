@@ -15,24 +15,27 @@ get_header();
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1>Revêtements</h1>
-				<h2>Jouer comme un pro avec les meilleurs revêtements du marché du ping pong !</h2>
+				<h1>Bois</h1>
+				<h2>Jouer comme un pro avec les plus grandes qualités de bois du marché !</h2>
 			</header><!-- .page-header -->
-
+			<section class="bois-wrapper">
+				<h2 class="bois-selection">Notre selection</h2>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
 				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
+				?>
+				<article class="bois-card">
+					<div class="bois-card-content">
+						<?php the_post_thumbnail();?>
+						<h2 class="bois-title"><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+					</div>
+				</article>
+		
+				<?php
+			endwhile;?>
+			</section>
+			<?php
 			the_posts_navigation();
 
 		else :
