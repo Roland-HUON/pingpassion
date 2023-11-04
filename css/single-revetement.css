@@ -91,6 +91,27 @@
     margin-left: 10px;
     font-size: 20px;
 }
+.single-revetement .nav-links .nav-previous{
+    display: flex;
+    justify-content: center;
+}
+.single-revetement .nav-links .nav-previous a{
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid #446084;
+    height: 40px;
+    width: 190px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+.single-revetement .nav-links .nav-previous a:hover{
+    color: gold;
+    font-weight: bold;
+    font-size: 14px;
+}
 @media screen and (max-width:800px) {
     .single-revetement-wrapper{
         display: flex;
