@@ -19,7 +19,7 @@ get_header();
 				<?php the_post_thumbnail();?>
 				<div class="single-revetement-card">
 					<div class="single-revetement-content">
-					<h2 class="single-revetement-title"><?php the_title();?></h2>
+						<h2 class="single-revetement-title"><?php the_title();?></h2>
 					</div>
 					<?php the_post_thumbnail();?>
 					<section class="single-revetement-information">

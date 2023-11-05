@@ -8,7 +8,6 @@
     align-items: center;
 }
 .single-bois .post-thumbnail img{
-    fill: black;
     width: auto;
     height: 300px;
     border: 1px solid black;

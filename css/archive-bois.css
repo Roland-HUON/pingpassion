@@ -20,9 +20,6 @@
     font-size: 24px;
     text-align: center;
 }
-.post-type-archive-bois .page-header p{
-    font-size: 18px;
-}
 .bois-wrapper{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

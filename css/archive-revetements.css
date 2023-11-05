@@ -16,9 +16,6 @@
     margin-bottom: 0.2em;
     margin-left: 0;
 }
-.post-type-archive-revetement .page-header p{
-    font-size: 18px;
-}
 .revetement-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -59,7 +56,7 @@
 }
 .revetement-card-content-precision{
     margin-top: 20px;
-    height: 150px;
+    height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
